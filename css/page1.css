@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+body,
+html {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Nunito", sans-serif;
+}
+.page-header {
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.other-page {
+	margin-left: 20px;
+}
+.page2 {
+	color: blue;
+}
+.page2:hover {
+	cursor: pointer;
+	color: brown;
+}
+.page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.slider {
+	width: 50%;
+	display: flex;
+}
+.slider-value {
+	display: flex;
+}
+.slider-input {
+	width: 100%;
+}
+.output {
+	width: 50%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+.people-list {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.each-person {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+.each-person > div {
+	width: 50%;
+}
+.person {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	border-bottom: solid 2px black;
+	padding-bottom: 5px;
+}
+.details-wrapper {
+	display: flex;
+}
+.details-wrapper > div {
+	width: 50%;
+}
+.friends {
+	margin-left: 20px;
+}
+.title {
+	font-weight: 600;
+}

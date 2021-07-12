@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page-1</title>
+		<link rel="stylesheet" href="/page1.css" />
+	</head>
+	<body>
+		<div class="page-header">Page1</div>
+		<div class="other-page">
+			Go to
+			<span
+				class="page2"
+				onclick="location.assign(`${window.location.origin}/page2`)"
+				>Page2</span
+			>
+		</div>
+		<div class="page-container">
+			<div class="slider">
+				<div class="bound lower">$1000</div>
+				<input
+					type="range"
+					min="1000"
+					max="4000"
+					value="2500"
+					class="slider-input"
+					onchange="getData(this.value)"
+				/>
+				<div class="bound upper">$4000</div>
+			</div>
+			<div class="slider-value">
+				<div class="slider-title">Current Value :</div>
+				<div class="slider-content"></div>
+			</div>
+			<div class="output">
+				<div class="people-list"></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/people.json"></script>
+	<script src="/page1.js"></script>
+</html>
